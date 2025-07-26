@@ -1,4 +1,5 @@
 const pegaDadoAleatorio = require('./pegaDadoAleatorio')
+
 const viloes = require('./dados/viloes')
 const objetos = require('./dados/objetos')
 const frasesClassicas = require('./dados/frasesClassicas')
@@ -12,13 +13,19 @@ function coisasAleatoriasDoMundoDoChapolin() {
     console.log('Mais inteligente que um asno')
     console.log('Ele é o ....')
     console.log('')
-    console.log('CHA PO LIN')
-    console.log('')
-    console.log('Coisas aleatórias do mundo do Chapolin:')
-    console.log('')
-    console.log(`Vilão: ${pegaDadoAleatorio(viloes)}`)
-    console.log(`Objeto: ${pegaDadoAleatorio(objetos)}`)
-    console.log(`Frase Clássica: ${pegaDadoAleatorio(frasesClassicas)}`)
-    console.log('')
+
+    setTimeout(() => {
+        console.log('CHA PO LIN!!')
+        console.log('')
+
+        setTimeout(() => {
+            console.log('Coisas aleatórias do mundo do Chapolin:')
+            console.log('')
+            console.log(`Vilão: ${pegaDadoAleatorio(viloes)}`)
+            console.log(`Objeto: ${pegaDadoAleatorio(objetos)}`)
+            console.log(`Frase Clássica: ${pegaDadoAleatorio(frasesClassicas)}`)
+            console.log('')
+        }, 2000)
+    }, 2000)
 }
 
