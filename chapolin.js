@@ -7,6 +7,8 @@ const frasesClassicas = require('./dados/frasesClassicas')
 coisasAleatoriasDoMundoDoChapolin()
 
 function coisasAleatoriasDoMundoDoChapolin() {
+    const tempoEntreMensagens = 2000
+
     console.log('')
     console.log('Mais rápido que uma tartarura')
     console.log('Mais forte que uma formiga')
@@ -25,7 +27,8 @@ function coisasAleatoriasDoMundoDoChapolin() {
             console.log(`Objeto: ${pegaDadoAleatorio(objetos)}`)
             console.log(`Frase Clássica: ${pegaDadoAleatorio(frasesClassicas)}`)
             console.log('')
-        }, 2000)
-    }, 2000)
+        }, tempoEntreMensagens)
+
+    }, tempoEntreMensagens)
 }
 
