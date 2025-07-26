@@ -1,32 +1,7 @@
 const pegaDadoAleatorio = require('./pegaDadoAleatorio')
-
-const viloes = [
-    'Poucas Trancas',
-    'Quase Nada',
-    'Tripa Seca',
-    'Racha Cuca',
-    'Pirata Alma Negra',
-    'Rosa Rumorosa'
-]
-
-const objeto = [
-    'Marreta Biônica',
-    'Aerolito',
-    'Carnerninho de anotações',
-    'Chirrin Chirrion do Diabo',
-    'Pipulas de nanicolina'
-]
-
-const frasesClassicas = [
-    'Não contavam com minha astúcia',
-    'Siga-me os bons',
-    'MInhas anteninhas de vinil estão dectando a presença do inimigo',
-    'Se aproveitam da minha nobreza',
-    'Suspeitei desde o princípio',
-    'Palma! Palma! Não priemos cânico!',
-    'Todos os meus movimentos são friamente calculados'
-]
-
+const viloes = require('./dados/viloes')
+const objetos = require('./dados/objetos')
+const frasesClassicas = require('./dados/frasesClassicas')
 
 coisasAleatoriasDoMundoDoChapolin()
 
@@ -42,14 +17,8 @@ function coisasAleatoriasDoMundoDoChapolin() {
     console.log('Coisas aleatórias do mundo do Chapolin:')
     console.log('')
     console.log(`Vilão: ${pegaDadoAleatorio(viloes)}`)
-    console.log(`Objeto: ${pegaDadoAleatorio(objeto)}`)
+    console.log(`Objeto: ${pegaDadoAleatorio(objetos)}`)
     console.log(`Frase Clássica: ${pegaDadoAleatorio(frasesClassicas)}`)
     console.log('')
 }
 
-/*
-function pegaDadoAleatorio(array) {
-    const indice = Math.floor(Math.random() * array.length)
-    return array[indice]
-}
-*/
